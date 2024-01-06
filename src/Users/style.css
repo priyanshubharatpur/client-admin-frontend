@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+.li-users {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.users-index {
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+.user-text {
+  color: #ffffff;
+}
+
+.users-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.users-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 150px;
+  padding-top: 150px;
+}
+
+.users-input {
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  width: 140px;
+}
+
+.users-input-text {
+  color: #ffffff;
+}
+
+.users-email-padding {
+  padding-right: 5px;
+}
+
+.users-create-button {
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  width: 100px;
+  color: #0097fb;
+}
+
+.users-create-button-text {
+  font-size: 15px;
+}
+
+.users-ph-text {
+  color: #ffffff;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.material-symbols-outlined {
+  color: rgb(235, 96, 96);
+  font-size: 20px;
+}
+
+.delete-btn-user {
+  width: 35px;
+  border-radius: 30px;
+  border-color: transparent;
+  margin-top: 10px;
+}

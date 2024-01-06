@@ -1,0 +1,19 @@
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 150px;
+}
+
+.upload-button {
+  border: 1px solid #665bc6;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #319bcb, #4a4fd9);
+  color: #ffffff;
+}
+
+.home-text {
+  font-size: 20px;
+}
