@@ -15,7 +15,7 @@ const Users = () => {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "https://clientadminbackend.onrender.com/users/all"
+          "https://client-admin-backend-jx3ada7jca-el.a.run.app/users/all"
         );
         const data = await response.json();
         setUsers(data.users);
@@ -58,7 +58,7 @@ const Users = () => {
         return;
       }
 
-      await fetch("https://clientadminbackend.onrender.com/users/create", {
+      await fetch("https://client-admin-backend-jx3ada7jca-el.a.run.app/users/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const Users = () => {
       });
 
       const response = await fetch(
-        "https://clientadminbackend.onrender.com/users/all"
+        "https://client-admin-backend-jx3ada7jca-el.a.run.app/users/all"
       );
       const data = await response.json();
       setUsers(data.users);
@@ -84,14 +84,14 @@ const Users = () => {
   const handleDeleteUser = async (userId) => {
     try {
       await fetch(
-        `https://clientadminbackend.onrender.com/users/delete/${userId}`,
+        `https://client-admin-backend-jx3ada7jca-el.a.run.app/users/delete/${userId}`,
         {
           method: "DELETE",
         }
       );
 
       const response = await fetch(
-        "https://clientadminbackend.onrender.com/users/all"
+        "https://client-admin-backend-jx3ada7jca-el.a.run.app/users/all"
       );
       const data = await response.json();
       setUsers(data.users);

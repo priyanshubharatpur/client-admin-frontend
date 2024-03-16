@@ -26,7 +26,7 @@ const UserDetails = () => {
         formData.append("frame", selectedFiles[i]);
 
         const response = await fetch(
-          `https://clientadminbackend.onrender.com/users/add-frames/${userPhone}`,
+          `https://client-admin-backend-jx3ada7jca-el.a.run.app/users/add-frames/${userPhone}`,
           {
             method: "POST",
             body: formData,
@@ -52,7 +52,7 @@ const UserDetails = () => {
       const phoneNo = phone;
       const encodedPublicId = encodeURIComponent(publicId);
       const response = await fetch(
-        `https://clientadminbackend.onrender.com/users/user/${phoneNo}/${uniqueName}/${encodedPublicId}`,
+        `https://client-admin-backend-jx3ada7jca-el.a.run.app/users/user/${phoneNo}/${uniqueName}/${encodedPublicId}`,
         {
           method: "DELETE",
         }
@@ -74,7 +74,7 @@ const UserDetails = () => {
     const fetchUserDetails = async () => {
       try {
         const response = await fetch(
-          `https://clientadminbackend.onrender.com/users/user/${phone}`
+          `https://client-admin-backend-jx3ada7jca-el.a.run.app/users/user/${phone}`
         );
         if (response.ok) {
           const data = await response.json();

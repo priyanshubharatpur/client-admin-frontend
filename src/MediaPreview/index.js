@@ -32,7 +32,7 @@ const MediaPreview = () => {
 
       try {
         const response = await fetch(
-          "https://clientadminbackend.onrender.com/media/upload",
+          "https://client-admin-backend-jx3ada7jca-el.a.run.app/media/upload",
           {
             method: "POST",
             body: formData,
@@ -57,7 +57,7 @@ const MediaPreview = () => {
       const encodedUniqueName = encodeURIComponent(uniqueName);
       const encodedPublicId = encodeURIComponent(publicId);
       const response = await fetch(
-        `https://clientadminbackend.onrender.com/media/delete/${encodedUniqueName}/${encodedPublicId}/${formattedDate}`,
+        `https://client-admin-backend-jx3ada7jca-el.a.run.app/media/delete/${encodedUniqueName}/${encodedPublicId}/${formattedDate}`,
         {
           method: "DELETE",
           headers: {
@@ -82,7 +82,7 @@ const MediaPreview = () => {
     const fetchMedia = async () => {
       try {
         const response = await fetch(
-          `https://clientadminbackend.onrender.com/media/${formattedDate}`
+          `https://client-admin-backend-jx3ada7jca-el.a.run.app/media/${formattedDate}`
         );
         if (response.ok) {
           const mediaData = await response.json();

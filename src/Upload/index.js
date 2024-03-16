@@ -43,7 +43,7 @@ const Upload = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://clientadminbackend.onrender.com/media/api/dates"
+          "https://client-admin-backend-jx3ada7jca-el.a.run.app/media/api/dates"
         );
         if (response.ok) {
           const data = await response.json();

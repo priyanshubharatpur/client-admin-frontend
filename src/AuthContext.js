@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     const backendEndpoint =
-      "https://clientadminbackend.onrender.com/auth/authenticate";
+      "https://client-admin-backend-jx3ada7jca-el.a.run.app/auth/authenticate";
 
     try {
       const response = await fetch(backendEndpoint, {
